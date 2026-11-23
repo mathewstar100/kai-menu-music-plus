@@ -1,7 +1,10 @@
 #pragma once
 #include <switch.h>
 #include "core.h"
-#define MUSIC_DIRECTORY "/switch/kai-menu-music"
+// Everything lives under MUSIC_ROOT: one folder per HOME-menu page, the selector NRO, and "home".
+#define MUSIC_ROOT "/switch/kai-menu-music"
+// HOME's songs (any number of WAVs) and its two setting files.
+#define MUSIC_DIRECTORY MUSIC_ROOT "/home"
 #define MUSIC_SELECTION MUSIC_DIRECTORY "/selected.txt"
 #define MUSIC_SHUFFLE MUSIC_DIRECTORY "/shuffle.txt"
 #define MAX_TRACK_BYTES (96u*1024u*1024u)

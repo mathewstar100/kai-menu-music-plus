@@ -109,6 +109,7 @@ int main(void) {
     if (sd_open) {
         // These are SD directories; all game/system content remains untouched.
         fsFsCreateDirectory(&sd,"/switch");
+        fsFsCreateDirectory(&sd,MUSIC_ROOT);       // one level at a time: the parent must exist first
         fsFsCreateDirectory(&sd,MUSIC_DIRECTORY);
         rc=refresh(&sd);
     }

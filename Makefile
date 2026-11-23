@@ -20,10 +20,10 @@ all: $(TARGET).nso $(TARGET)-selector.nro
 $(BUILD):
 	mkdir -p $@
 
-$(BUILD)/%.o: source/%.c source/core.h source/songs.h source/control.h | $(BUILD)
+$(BUILD)/%.o: source/%.c source/core.h source/songs.h source/applets.h source/control.h | $(BUILD)
 	$(PREFIX)gcc $(CFLAGS) -c $< -o $@
 
-$(BUILD)/$(TARGET).elf: $(BUILD)/main.o $(BUILD)/core.o $(BUILD)/songs.o
+$(BUILD)/$(TARGET).elf: $(BUILD)/main.o $(BUILD)/core.o $(BUILD)/songs.o $(BUILD)/applets.o
 	$(PREFIX)gcc $(LDFLAGS) $^ $(LIBS) -o $@
 
 $(TARGET).nso: $(BUILD)/$(TARGET).elf
