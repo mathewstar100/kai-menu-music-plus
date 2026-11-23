@@ -49,6 +49,7 @@ All six pages are recognised out of the box. News and GameShare were matched to 
 ## Credits
 
 - **[WeWaffles](https://github.com/WeWaffles)** created the original [kai-menu-music](https://github.com/WeWaffles/kai-menu-music): the HOME menu music plugin, the selector app and the focus detection that this fork is built on. This fork keeps the original MIT license (see `LICENSE`).
+- The per-page music and single-folder layout in this fork were written with help from [Claude](https://claude.ai) (Anthropic).
 - **[ouncebrew](https://github.com/ouncebrew)** makes [kaiHEN](https://github.com/ouncebrew/kaihen) (libkaihen), [libounce](https://github.com/ouncebrew/libounce) and [ounce-devkit](https://github.com/ouncebrew/ounce-devkit), which the plugin and selector are built with.
 - **[libnx](https://github.com/switchbrew/libnx)** and its authors, whose license is included with this project.
 
